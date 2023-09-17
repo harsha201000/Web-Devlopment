@@ -1,0 +1,10 @@
+body{
+    background-color: gray;
+    text-align: left;
+    border-radius: 10px;
+}
+
+p{
+    font-size: large;
+    font-weight: 100;
+}
