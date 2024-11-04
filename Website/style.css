@@ -1,0 +1,255 @@
+body{
+    background-color: green;
+    margin: 0px;
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    font-style: initial;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+h1{
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    border-radius: 15px;
+    text-shadow: 2px 1px;
+}
+
+h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.pagination{
+    text-align: center;
+}
+
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.pagination a.active{
+    background-color: rgb(71, 205, 71);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active){
+    background-color: rgb(246, 222, 222);
+    border-radius: 5px;
+}
+.box{
+    border: 10px solid;
+    font-size: 2em;
+    width: 100px;
+    height: 100px;
+}
+
+#box1{
+    background-color: brown;
+    height: 100px;
+    width: 100px;
+    position: relative;
+
+}
+
+#box2{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    right: 0px;
+    position: relative;
+
+
+}
+
+#img1{
+    float: left;
+    margin-right: 10px;
+}
+
+#container{
+    border: 2px solid;
+}
+
+#container > p{
+    background-color:cyan;
+}
+
+a:link{
+    color: dodgerblue;
+}
+
+a:hover{
+    color:lightcyan;
+}
+
+a:active{
+    color: darkblue;
+    font-size: 1em;
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown button{
+    background-color: lightgreen;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 50px;
+    box-shadow: 2px 2px 5px blue;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown:hover button{
+    background-color: white;
+}
+
+.dropdown a:hover{
+    background-color: white;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgba(207, 202, 202, 0.819);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align:start;
+}
+
+.navbar a:hover{
+    background-color: black;
+}
+
+.navbar li{
+    float: left;
+}
+
+.gallery{
+    display: inline-block;
+    border: 3px solid black;
+    margin: 2px;
+}
+
+.icons{
+    text-align: center;
+}
+
+.icons a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.fa-solid.fa-house.fa-5x{
+    color: gray;
+}
+
+.fa-brands.fa-youtube.fa-5x{
+    color: red;
+}
+
+#box3{
+    background-color: greenyellow;
+    animation-name: shrink;
+    animation-duration: 3s;
+    transform: translateX(50px);
+    transform: translateY(30px);
+    transform: rotateZ(180deg);
+    transform: scaleX(1)
+    
+    
+}
+
+#box4{
+    animation-name: slideDown;
+    animation-duration: 3s;
+    background-color: orangered;
+    transform: translateX(100px);
+    transform: translateY(100px);
+    animation-name: fade;
+    animation-duration: 5s;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50vh;
+}
+
+@keyframes slideLeft{
+    from{transform: translateX(100px);}
+}
+
+@keyframes slideRight{
+    to{transform: translateX(100px);}
+}
+
+@keyframes slideUp{
+    from{transform: translateY(100px);}
+}
+
+@keyframes slideDown{
+    to{transform: translateY(100%);}
+}
+
+@keyframes rotate{
+    100%{transform: rotateZ(360deg)};
+}
+
+@keyframes grow{
+    100%{transform: scale(2, 2);}
+}
+
+@keyframes shrink{
+    100%{transform: scale(2, 2);}
+}
+
+@keyframes fade{
+    100%{opacity: 3};
+}
